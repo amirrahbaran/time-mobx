@@ -7,7 +7,8 @@ import "./App.css";
 class App extends Component {
   render() {
     return <div className="App">
-      {store.time.toLocaleTimeString()}
+      <h1>{store.time.toLocaleTimeString()}</h1>
+      <button onClick={()=>store.pauseClock()}>Pause</button>
     </div>;
   }
 }
