@@ -5,8 +5,11 @@ class Store {
   
   constructor() {
     this.time = new Date();
+    this.interval = setInterval(()=>{
+      this.time = new Date();
+    }, 1000);
   }
 }
 
-let store = new Store();
+const store = new Store();
 export default store;
