@@ -5,13 +5,21 @@ class Store {
 
   constructor() {
     this.time = new Date();
-    this.interval = setInterval(() => {
-      this.time = new Date();
-    }, 1000);
+    this.resetInterval();
   }
 
   pauseClock() {
     clearInterval(this.interval);
+  }
+
+  resumeClock() {
+    this.resetInterval();
+  }
+
+  resetInterval() {
+    this.interval = setInterval(() => {
+      this.time = new Date();
+    }, 1000);
   }
 }
 
