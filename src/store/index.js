@@ -8,10 +8,12 @@ class Store {
     this.resetInterval();
   }
 
+  @action
   pauseClock() {
     clearInterval(this.interval);
   }
 
+  @action
   resumeClock() {
     this.resetInterval();
   }
