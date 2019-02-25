@@ -1,5 +1,5 @@
-## Todo-react-app
-This app is being provided for rearranging the todo tasks management
+## Timer-app
+This app is a timer which is provided by react and mobx
 
 ### Demo 
 https://amirrahbaran.github.io/time-mobx/
